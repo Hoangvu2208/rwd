@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwd template
+
+    </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <style>
+        [class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+}
+#posts {
+    height: 100%;
+    background-color: aqua;
+}
+#search {
+    height: 100%;
+    background-color: grey;
+}
+/* phone */
+@media only screen and (max-width: 578px) {
+ 
+}
+/* tablets */
+@media only screen and (max-width: 768px) and (min-width: 578px) {
+  
+}
+
+/* desktop */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+   
+}
+
+/*large desktop */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+   
+}
+/*extra desktop */
+@media only screen and (min-width: 1200px) {
+  
+} 
+#navbar {
+
+height: 100px;
+
+}
+
+#right-bar{
+    background-color: blue;
+    height: 500px;
+}
+#right-bar ul li {
+    list-style-type: none;
+}
+#left-bar{
+    background-color: yellow;
+    height: 500px;
+}
+#left-bar ul li {
+    list-style-type: none;
+}
+#content{
+    background-color: green;
+    height: 500px;
+}
+#footer{
+    height: 100px;
+    background-color: red;
+}
+.menu{
+    display: flex;
+    height: 50px;
+    background-color: #aaa;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.login{
+    float: right;
+    font-weight: bold;
+}
+.btn{
+    height: 50px;
+    width: 100%;
+}
+
+
+    </style>
+    <div id="navbar">
+        <span class="col-1 menu"><button class="btn"><a href="#">Logo</a></button></span>
+        <span class="col-1 menu"><button class="btn"><a href="#">Home</a></button></span>
+        <span class="col-1 menu"><button class="btn"><a href="#">About</a></button></span>
+        <span class="col-1 menu"><button class="btn"><a href="#">Projects</a></button></span>
+        <span class="col-1 menu"><button class="btn"><a href="#">Contact</a></button></span>
+        <span class="col-1 login"><a href="">Login</a></span>
+    </div>
+    <div id="main">
+        <div id="left-bar" class="col-2">
+            <ul>
+                <li><button class="btn">Content</button></li>
+                <li><button class="btn">Content</button></li>
+                
+            </ul>
+        </div>
+        
+        <div id="content" class="col-8">
+            <section>
+                <h2>Welcome</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, voluptatum. Magni velit totam praesentium similique? Obcaecati officia qui est laborum consequatur enim, saepe itaque suscipit eaque rem. Minus, nam illo!</p>
+            </section>
+            <section>
+                <h2>Test</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, voluptatum. Magni velit totam praesentium similique? Obcaecati officia qui est laborum consequatur enim, saepe itaque suscipit eaque rem. Minus, nam illo!</p>
+            </section>
+        </div>
+        <div id="right-bar" class="col-2">
+            <ul>
+                <li><button class="btn">ADS</button></li>
+                <li><button class="btn">ADS</button></li>
+                
+            </ul>
+        </div>
+
+    </div>
+    <div id="footer" class="col-12">
+        <p style="font-weight: bold;text-align: center;">Copy Rights by .... </p>
+    </div>
+   
+    
+</body>
+</html>
